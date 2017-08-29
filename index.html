@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0020)http://tomoslau.com/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -10,8 +8,8 @@
 <title>gluestick</title>
 <meta property="og:title" content="gluestick">
 <meta property="og:type" content="website">
-<meta property="og:url" content="#">
-<meta property="og:image" content="#">
+<meta property="og:url" content="http://gluestickent.com">
+<meta property="og:image" content="http://gluestickent.com/img/gluestick-og.jpg">
 <style>
     html {
         height: 100%;
@@ -30,25 +28,17 @@
     .wrapper {
         display: flex;
         flex-flow: wrap;
-        overflow-y: scroll;
         padding: 0;
-            display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+        }
+    .video, .card {
+        margin: 1.5rem;
+        box-shadow: -8px 8px;
+        border: 2px solid #000;
     }
     .card {
-        width:100%;
-        margin: auto +2rem;
-        padding: 1.5rem;
-        max-width: 500px;
+        margin-top: 0;
+        padding: 1rem;
         background-color: #ffb9c3;
-        border: 2px solid #000;
-        box-shadow: -8px 8px;
     }
     div {   
         display: block;
@@ -58,6 +48,10 @@
         margin-top: 1rem;
         min-width: 120px;
         text-align: center;
+    }
+    .video {
+        flex-grow: 2;
+        min-height: 40vh;
     }
     h2 {
         font-size: 1.2rem;
@@ -98,23 +92,33 @@
         font-weight: 800;
         margin-left: 4px;
         cursor:pointer;
+        -webkit-appearance: none;
     }
     @media (min-width: 768px) {
+        .video, .card {
+            margin: 2rem;
+        }
         .wrapper {
-            padding: 0;
+            padding: 4vh 8vw 0;
         }
         .card {
-            padding: 3rem;
+            padding: 2rem;
         }
         input, textarea {
             font-size: 1rem;
             padding: 1rem;
         }
     }
+    @media (max-width: 1200px) {
+        .card {
+            width: 100%;
+        }
+    }
 </style>
 </head>
 <body>
     <div class="wrapper">
+        <iframe class="video" src="https://www.youtube.com/embed/vXtQ_0r1Xxc?rel=0&amp;autoplay=1&amp;loop=1&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
         <div class="card">
             <div class="section">
                 <img src="img/gluestick-logo.png" id="logo">
@@ -123,10 +127,10 @@
                 <h2>contact us</h2>
                 <form action="https://formspree.io/info@gluestickent.com"
                       method="POST">
-                    <input type="text" name="name" placeholder="Your name">
-                    <input type="email" name="_replyto" placeholder="Your email">
-                    <textarea name="message" placeholder="Your message"></textarea>
-                    <input type="submit" value="Send" id="submit">
+                    <input type="text" name="name" placeholder="your name">
+                    <input type="email" name="_replyto" placeholder="your email">
+                    <textarea name="message" placeholder="your message"></textarea>
+                    <input type="submit" value="send" id="submit">
                 </form>
             </div>
             <div class="section" id="social">
