@@ -107,8 +107,11 @@ textarea {
     h1 {
         font-size: 2rem;
     }
-    .feature-1-1 {
+    .feature-square {
         width: 66%;
+    }
+    .feature-portrait {
+        width: 50%;
     }
     .flex {
         display:flex;
