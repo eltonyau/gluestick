@@ -45,6 +45,12 @@ footer {
 .feature img {
     border: 2px solid #000;
 }
+.callout {
+    border: 2px solid #000;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+}
 #video {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
